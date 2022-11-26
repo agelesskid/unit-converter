@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield; 
+}
+
+body{
+    background-color: #1F2937;
+}
+
+.input-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #6943FF;
+    padding: 34px 50px;
+}
+
+h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.input-block__number {
+    /* Input */
+    box-sizing: border-box;
+    width: 117px;
+    height: 83px;
+    border: 2px solid #B295FF;
+    border-radius: 5px;
+    background: #6943FF;
+    margin-bottom: 25px;
+
+    /* Text */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 58px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.input-block__button {
+    /* Button */
+    min-width: 117px;
+    min-height: 42px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+
+    /* Text */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #3D3D3D;
+}
+
+.input-block__alert {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px; 
+    text-align: center; 
+    color: #ffff00;
+    margin-top: 34px;
+}
+
+.result-block {
+    background-color: #1F2937;
+    padding: 36px 25px;
+}
+
+.result-block__card {
+    display: flex;
+    flex-direction: column;
+    padding: 31px 77px 18px;
+    background: #273549;
+    border-radius: 5px;
+    margin-bottom: 23px;
+}
+
+.result-block__card__h2 {
+    min-width: 346px;
+    min-height: 25px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center; 
+    color: #CCC1FF;
+    margin-bottom: 9px;
+}
+
+.result-block__card__h2-description {
+    min-width: 346px;
+    min-height: 25px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px; 
+    text-align: center; 
+    color: #FFFFFF;
+}
+
