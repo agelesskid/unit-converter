@@ -48,6 +48,7 @@ convertBtn.addEventListener("click", function() {
 
 numberInput.addEventListener("keypress", function(e) {
     if (e.key === "Enter"){
-        convertValues(numberInput.value)
+        let values = convertValues(numberInput.value)
+        renderValues(values)
     }
 })
