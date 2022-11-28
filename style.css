@@ -25,7 +25,7 @@ body{
     justify-content: center;
     align-items: center;
     background-color: #6943FF;
-    padding: 34px 50px;
+    padding: 34px 50px 17px;
 }
 
 h1 {
@@ -69,6 +69,7 @@ h1 {
     border-radius: 5px;
     border: none;
     cursor: pointer;
+    margin-bottom: 17px;
 
     /* Text */
     font-family: 'Inter';
@@ -87,7 +88,6 @@ h1 {
     line-height: 20px; 
     text-align: center; 
     color: #ffff00;
-    margin-top: 34px;
 }
 
 .result-block {

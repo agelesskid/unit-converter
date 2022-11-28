@@ -7,6 +7,12 @@ const volumeDesc = document.getElementById("volume-description")
 const massDesc = document.getElementById("mass-description")
 
 
+function renderValues(obj){
+    lengthDesc.innerHTML = obj.length
+    volumeDesc.innerHTML = obj.volume
+    massDesc.innerHTML = obj.mass
+}
+
 function convertValues(value){
     if(isNaN(value) || !value){
         alert.innerHTML = "Type the number"
@@ -22,17 +28,22 @@ function convertValues(value){
         let volumeStr = `${value} liters = ${gallons.toFixed(3)} gallons | ${value} gallons = ${liters.toFixed(3)} liters`
         let massStr = `${value} kilos = ${pounds.toFixed(3)} pounds | ${value} pounds = ${kilos.toFixed(3)} kilos`
 
-        lengthDesc.innerHTML = lengthStr
-        volumeDesc.innerHTML = volumeStr
-        massDesc.innerHTML = massStr
-
         alert.innerHTML = ""
+
+        let obj = {
+            "length": lengthStr,
+            "volume": volumeStr,
+            "mass": massStr
+        }
+
+        return obj
     }
     
 }
 
 convertBtn.addEventListener("click", function() {
-    convertValues(numberInput.value)
+    let values = convertValues(numberInput.value)
+    renderValues(values)
 })
 
 numberInput.addEventListener("keypress", function(e) {
